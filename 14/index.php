@@ -15,6 +15,7 @@
 
   NOTE: Once the chain starts the terms are allowed to go above one million.
 */
+$chainLength = 0;
 $highest = 0;
 for( $i = 2; $i<1000000; $i++ ) {
   $t = 1;
@@ -23,11 +24,14 @@ for( $i = 2; $i<1000000; $i++ ) {
   while($e!=1){
     $e = ($e&1)?$e*3+1:$e/2;
     //echo ' → ' . $e;
-    $highest = $i > $highest ? $i : $highest;
+    if($chainLength < $t){
+      $highest = $i;
+      $chainLength = $t;
+    }
     $t++;
   }
   //echo ' Most steps: ' . $highest;
   //echo "<br />";
 }
 
-echo $highest;
+echo $highest . ' in ' . $chainLength . ' steps';
