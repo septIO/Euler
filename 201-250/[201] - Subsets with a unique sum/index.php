@@ -40,4 +40,4 @@ Determine the sum of all integers which are the sum of exactly one of the 50-ele
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -18,4 +18,4 @@ Given that the robot starts facing North, how many journeys of 70 arcs in length
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

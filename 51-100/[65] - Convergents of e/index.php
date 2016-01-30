@@ -98,4 +98,4 @@ Find the sum of digits in the numerator of the 100th convergent of the continued
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -36,4 +36,4 @@ NOTE: This problem is an easier version of Problem 110; it is strongly advised t
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

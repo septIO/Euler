@@ -12,4 +12,4 @@ What is the largest n-digit pandigital prime that exists?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

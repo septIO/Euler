@@ -16,4 +16,4 @@ How many coefficients in the expansion of (x + y + z)200000 are multiples of 101
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

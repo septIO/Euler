@@ -19,4 +19,4 @@ Find ∑ z(n) for 0<n<1017.
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

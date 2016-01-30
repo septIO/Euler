@@ -14,4 +14,4 @@ Given that Fk is the first Fibonacci number for which the first nine digits AND 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

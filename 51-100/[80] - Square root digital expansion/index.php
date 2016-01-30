@@ -13,4 +13,4 @@ For the first one hundred natural numbers, find the total of the digital sums of
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

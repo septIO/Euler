@@ -12,4 +12,4 @@ Find the lowest sum for a set of five primes for which any two primes concatenat
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

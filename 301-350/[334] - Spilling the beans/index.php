@@ -65,4 +65,4 @@ Consider now 1500 adjacent bowls containing b1, b2,..., b1500 beans respectively
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

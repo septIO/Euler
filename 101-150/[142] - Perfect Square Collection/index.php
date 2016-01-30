@@ -9,4 +9,4 @@ Find the smallest x + y + z with integers x > y > z > 0 such that x + y, x − y
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

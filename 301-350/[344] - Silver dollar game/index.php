@@ -31,4 +31,4 @@ Find W(1 000 000, 100) modulo the semiprime 1000 036 000 099 (= 1 000 003 · 1 0
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

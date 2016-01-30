@@ -16,4 +16,4 @@ How many numbers below fifty million can be expressed as the sum of a prime squa
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

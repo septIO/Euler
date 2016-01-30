@@ -12,4 +12,4 @@ What is the largest prime factor of the number 600851475143 ?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

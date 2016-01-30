@@ -27,4 +27,4 @@ How many distinct true intersection points are found among the 5000 line segment
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

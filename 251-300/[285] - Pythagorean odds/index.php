@@ -18,4 +18,4 @@ If he plays 105 turns with k = 1, k = 2, k = 3, ..., k = 105, wh
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

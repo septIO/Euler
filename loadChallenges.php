@@ -154,8 +154,8 @@ class Euler
       
             '$time_start = microtime(true);' . PHP_EOL .
             '// Code here...' . PHP_EOL .
-            'echo microtime(true) - $start_time . "seconds used";';
-      
+            'echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";';
+            
             
       
       

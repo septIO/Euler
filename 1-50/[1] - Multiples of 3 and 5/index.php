@@ -10,4 +10,4 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

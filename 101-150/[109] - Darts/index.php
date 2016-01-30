@@ -56,4 +56,4 @@ How many distinct ways can a player checkout with a score less than 100?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

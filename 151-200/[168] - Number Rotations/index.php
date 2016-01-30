@@ -13,4 +13,4 @@ Find the last 5 digits of the sum of all integers n, 10 < n < 10100, that have t
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

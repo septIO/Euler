@@ -14,4 +14,4 @@ What is the probability that Pyramidal Pete beats Cubic Colin? Give your answer 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

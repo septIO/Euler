@@ -18,4 +18,4 @@ Find the sum of the perimeters of all integer sided triangles for which the area
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

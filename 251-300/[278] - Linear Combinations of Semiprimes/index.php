@@ -21,4 +21,4 @@ Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers and p &lt q < r < 50
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

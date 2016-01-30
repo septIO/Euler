@@ -18,4 +18,4 @@ How many different ways can one hundred be written as a sum of at least two posi
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

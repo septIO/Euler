@@ -9,4 +9,4 @@ How many 18-digit numbers n (without leading zeros) are there such that no digit
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

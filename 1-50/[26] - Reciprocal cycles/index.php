@@ -24,4 +24,4 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

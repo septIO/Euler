@@ -16,4 +16,4 @@ Find the sum of all denominators of the best approximations to √n for the deno
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

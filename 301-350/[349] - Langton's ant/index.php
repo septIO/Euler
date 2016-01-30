@@ -17,4 +17,4 @@ Starting with a grid that is entirely white, how many squares are black after 10
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

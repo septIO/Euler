@@ -23,4 +23,4 @@ Find the sum of all values of e, 1<e<φ(1009,3643) and gcd(e,φ)=1, so that the 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

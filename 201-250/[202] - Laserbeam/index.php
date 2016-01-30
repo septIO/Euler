@@ -18,4 +18,4 @@ In how many ways can a laser beam enter at vertex C, bounce off 12017639147 surf
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -82,4 +82,4 @@ Find the number of entries which are not divisible by 7 in the first one billion
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

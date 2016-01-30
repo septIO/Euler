@@ -15,4 +15,4 @@ How many fractions lie between 1/3 and 1/2 in the sorted set of reduced proper f
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

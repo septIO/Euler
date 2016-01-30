@@ -26,4 +26,4 @@ What is the index of the first term in the Fibonacci sequence to contain 1000 di
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

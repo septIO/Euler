@@ -13,4 +13,4 @@ How many ways are there to write the number 1/2 as a sum of inverse squares usin
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

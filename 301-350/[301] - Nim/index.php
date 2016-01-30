@@ -26,4 +26,4 @@ For how many positive integers n ≤ 230 does X(n,2n,3n) = 0 ?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

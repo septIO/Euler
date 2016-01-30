@@ -16,4 +16,4 @@ Find the sum of the digits of all the n-digit steady squares in the base 14 numb
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

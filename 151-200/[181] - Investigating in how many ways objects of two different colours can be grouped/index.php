@@ -12,4 +12,4 @@ In how many ways can sixty black objects B and forty white objects W be  thus gr
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

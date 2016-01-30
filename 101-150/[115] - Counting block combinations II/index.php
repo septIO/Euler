@@ -16,4 +16,4 @@ For m = 50, find the least value of n for which the fill-count function first ex
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

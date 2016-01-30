@@ -12,4 +12,4 @@ What is the expected number of unoccupied squares after 50 rings of the bell? Gi
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -45,4 +45,4 @@ Find the sum of the only ordered set of six cyclic 4-digit numbers for which eac
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -13,4 +13,4 @@ How many values of n less than one million have exactly ten distinct solutions?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

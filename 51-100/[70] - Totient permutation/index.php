@@ -12,4 +12,4 @@ Find the value of n, 1 < n < 107, for which φ(n) is a permutation of n and the 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

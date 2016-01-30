@@ -21,4 +21,4 @@ In how many ways can you fill a 4x4 grid with the digits d, 0 ≤ d ≤ 9 so tha
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

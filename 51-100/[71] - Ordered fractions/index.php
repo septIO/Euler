@@ -14,4 +14,4 @@ By listing the set of reduced proper fractions for d ≤ 1,000,000 in ascending 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -11,4 +11,4 @@ How many distinct sets containing each of the digits one through nine exactly on
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

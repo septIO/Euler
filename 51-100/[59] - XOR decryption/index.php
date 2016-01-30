@@ -14,4 +14,4 @@ Your task has been made easy, as the encryption key consists of three lower case
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

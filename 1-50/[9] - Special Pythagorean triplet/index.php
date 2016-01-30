@@ -13,4 +13,4 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.Find the
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

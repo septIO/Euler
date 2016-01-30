@@ -20,4 +20,4 @@ How many different rectangles could be situated within 47x43 and smaller grids?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

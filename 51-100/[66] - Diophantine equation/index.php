@@ -20,4 +20,4 @@ Find the value of D ≤ 1000 in minimal solutions of x for which the largest val
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

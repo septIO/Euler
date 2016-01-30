@@ -55,4 +55,4 @@ Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

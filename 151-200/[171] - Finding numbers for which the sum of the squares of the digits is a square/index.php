@@ -13,4 +13,4 @@ Find the last nine digits of the sum of all n, 0 < n < 1020, such that f(n) is a
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

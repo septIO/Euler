@@ -31,4 +31,4 @@ How many sides does S1864 + S1865 + … + S1909 have?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

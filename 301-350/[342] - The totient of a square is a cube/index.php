@@ -22,4 +22,4 @@ Find the sum of all numbers n, 1 &lt n < 1010 such that φ(n2) is a cube.
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

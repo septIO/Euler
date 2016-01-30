@@ -20,4 +20,4 @@ For integer values x, y, h and 0 < x < y < 1 000 000, how many triplets (x,y,h) 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

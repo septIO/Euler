@@ -23,4 +23,4 @@ What is the combined volume of all 50000 cuboids, C1,...,C50000 ?
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

@@ -17,4 +17,4 @@ How many primitive integer sided triangles exist with a perimeter not exceeding 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";

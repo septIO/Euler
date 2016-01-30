@@ -20,4 +20,4 @@ In how many ways can twenty 12-sided dice (sides numbered 1 to 12) be rolled so 
 
 $time_start = microtime(true);
 // Code here...
-echo microtime(true) - $start_time . "seconds used";
+echo "<p>" . (microtime(true) - $time_start) . "seconds used</p>";
