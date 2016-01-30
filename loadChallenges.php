@@ -7,11 +7,25 @@
    * Change the $folderThreshold to the maximum amount of questions per folder (default: 50)
    */
 namespace Euler;
-
+set_time_limit ( 3600 );
 $euler = new Euler();
 $euler -> folderThreshold = 50;
-for($i = 1; $i <= 3; $i++){
-  var_dump($euler -> requestPage($i));
+$i = 1;
+while(true){
+  $euler -> currentChallenge = $i;
+  $challenge = $euler -> requestPage();
+  
+  
+  
+  if($challenge['title'] -> item(0) -> nodeValue != 'Problems Archives'){
+    
+    $euler -> createStructure($i);
+    $i++;
+  } else {
+    break;
+  }
+  
+  
 }
 class Euler
 {
@@ -29,7 +43,7 @@ class Euler
    * This holds the index of the challenge we're currently working with.
    * Use setChallenge(x) to change it, Default: 1
    */
-  private $currentChallenge;
+  public $currentChallenge;
   
   public $HTML;
   /**
@@ -48,11 +62,11 @@ class Euler
     $lowerBound = floor(($this -> currentChallenge - 1) / $this -> folderThreshold) * $this -> folderThreshold + 1;
     
     $upperBound = ceil($this -> currentChallenge / $this -> folderThreshold) * $this -> folderThreshold;
-    $folderPath = $lowerBound . '-' . $upperBound . '/[' . $this -> currentChallenge . '] - ' . 'Title';
+    $folderPath = $lowerBound . '-' . $upperBound . '/[' . $this -> currentChallenge . '] - ' . $this -> HTML['title'] -> item(0) -> nodeValue;
     
     if(!file_exists($folderPath . '/index.php')){
       mkdir($folderPath, 0777, true);
-      file_put_contents($folderPath . '/index.php', $this -> writeComment($this -> requestPage()));
+      file_put_contents($folderPath . '/index.php', $this -> writeComment($this -> HTML['content'] -> item(0) -> nodeValue));
     }
       
     
@@ -86,21 +100,16 @@ class Euler
     $doc->loadHTMLFile($url . $this -> currentChallenge);
     
     $xpath = new \DOMXPath($doc);
-    $this -> HTML = $xpath;
+
     $query = "//div[@class='problem_content']";
     
     $entries['content'] = $xpath -> query($query);
     $entries['title'] = $xpath -> query("//h2");
     
-    // If the div doesn't exist, we're done extracting
-    return $entries ? $this -> DOMinnerHTML($entries['content'] -> item(0)) : false;;
+    $this -> HTML = $entries;
     
-  }
-  
-  public function getTitle(){
-
-    $this -> requestPage();
-    return $this -> HTML;
+    return $entries;
+    
   }
   
   /**
@@ -137,7 +146,20 @@ class Euler
   
   private function writeComment($comment){
     
-    return '/**' . PHP_EOL. PHP_EOL . $comment . PHP_EOL . '*/' . PHP_EOL;
+    return '<?php' . PHP_EOL . 
+            '/**' . PHP_EOL. PHP_EOL . 
+            
+              $comment . PHP_EOL . 
+            '*/' . PHP_EOL . PHP_EOL . PHP_EOL .
+      
+            '$time_start = microtime(true);' . PHP_EOL .
+            '// Code here...' . PHP_EOL .
+            'echo microtime(true) - $start_time . "seconds used";';
+      
+            
+      
+      
+      ;
     
   }
   
